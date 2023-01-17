@@ -5,7 +5,6 @@ public class BodyMassIndex {
 
         Scanner input = new Scanner(System.in);
 
-        //Edges values entered
         System.out.println("Enter the kilo:");
         kg = input.nextDouble();
 
