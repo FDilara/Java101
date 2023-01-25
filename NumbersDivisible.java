@@ -2,7 +2,8 @@ import java.util.Scanner;
 //Program to find numbers divisible by 3 and 4 up to the entered number
 public class NumbersDivisible {
     public static void main(String[] args) {
-        int number;
+        int number, sum=0, count=0;
+        double average;
 
         Scanner input = new Scanner(System.in);
 
@@ -13,8 +14,13 @@ public class NumbersDivisible {
             if(i%2==0) {
                 if(i%3==0 && i%4==0) {
                   System.out.print(i+" ");
+                  sum += i;
+                  count++;
                 }
             }
         }
+
+        System.out.print("\n"+"Average: "+ sum/count);
+
     }
 }
